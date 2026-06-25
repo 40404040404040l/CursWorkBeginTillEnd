@@ -1,0 +1,9 @@
+<svg width="700" height="64" viewBox="0 0 700 64" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M28 3 C15 4 7 10 4 22 C2 33 5 47 13 55 C21 63 36 60 52 61 C119 63 181 60 249 61 C318 62 384 60 452 61 C521 63 583 60 650 61 C674 61 690 54 695 42 C700 30 697 16 689 9 C681 2 668 4 649 3 C582 5 519 2 452 4 C384 5 318 2 250 4 C181 5 119 2 51 4 C42 4 34 3 28 3Z"
+    stroke="black"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

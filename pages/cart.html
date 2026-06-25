@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина | THEOSK STORE</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <script src="../scripts/home.js" defer></script>
+  </head>
+  <body id="home" class="favorites-page cart-page">
+    <div>
+      <header>
+        <div class="container">
+          <nav aria-label="Открыть меню">
+            <ul>
+              <li>
+                <button type="button" aria-controls="site-menu" aria-expanded="false" data-menu-open>
+                  <svg class="burger-icon" viewBox="0 0 56 54" aria-hidden="true">
+                    <path
+                      class="burger-icon__line burger-icon__line--top"
+                      d="M3.00125 3.74103C3.00125 3.74692 2.98829 3.84436 3.14062 3.93976C3.38466 4.09259 4.31465 3.68211 5.07995 3.58343C6.84586 3.35572 9.06008 3.59559 11.6315 3.67986C13.6014 3.74442 16.2606 4.06996 18.0931 4.11066C20.5871 4.16606 22.1134 4.03444 23.4288 4.13661C24.6733 4.23327 26.2952 4.03644 27.9832 3.96464C30.3982 3.86191 31.8762 3.718 32.9846 3.52677C33.6779 3.40715 34.1128 3.21062 34.6094 3.11071C35.9788 2.83523 38.4004 3.14831 39.6399 3.2492C41.0112 3.36084 43.3634 3.38573 46.1009 3.46266C46.9959 3.52653 47.8539 3.59703 49.249 3.64076C50.1464 3.65563 51.4287 3.65563 53.001 3.6324"
+                    />
+                    <path
+                      class="burger-icon__line burger-icon__line--middle"
+                      d="M3.00098 28.1358C4.26814 27.7855 6.11594 27.4021 6.69569 27.4195C7.30438 27.4378 7.85136 27.8806 8.54457 28.1767C9.58492 28.621 11.1797 28.4191 12.5821 28.4762C13.8889 28.5293 14.905 27.8678 16.2491 27.6313C18.4121 27.2507 19.6515 28.0186 20.8887 27.9988C22.2654 27.9768 27.1069 28.2759 30.3777 28.1597C31.9252 28.1047 33.0776 27.8624 35.0339 27.6624C40.1062 27.1439 41.6793 28.2702 44.0594 28.5812C46.9796 28.5904 49.3001 28.4777 50.4278 28.2982C51.099 28.2129 51.971 28.1397 53.001 28.0449"
+                    />
+                    <path
+                      class="burger-icon__line burger-icon__line--bottom"
+                      d="M3.00098 49.9157C3.27365 50.0159 3.74534 50.1717 4.40952 50.2374C5.17913 50.3135 5.79465 49.7196 6.75896 49.5726C8.01618 49.3808 9.28531 49.6804 10.3828 49.9687C11.8992 50.3671 16.7125 50.7185 23.6073 50.6503C29.9694 50.5874 31.4945 50.0204 33.2377 50.0337C35.097 50.0479 37.5216 50.3149 38.9926 50.3785C40.9477 50.463 45.8303 50.6077 49.5836 50.6748C50.2081 50.5996 50.7208 50.4587 51.274 50.351C51.8272 50.2433 52.4053 50.173 53.001 50.1005"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="../index.html">THEOSK STORE</a>
+
+          <nav aria-label="Избранное и корзина">
+            <ul>
+              <li>
+                <a href="favorites.html">
+                  <img src="../DesignEkran/svg/Heart.svg" alt="Перейти в избранное" width="28" height="28" />
+                  <img src="../DesignEkran/svg/HeartHover.svg" alt="" width="28" height="28" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <span class="header-current-icon" aria-label="Вы на странице корзины">
+                  <img src="../DesignEkran/svg/KorzinaHover.svg" alt="" width="28" height="28" aria-hidden="true" />
+                </span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <aside class="menu-overlay" id="site-menu" aria-hidden="true" hidden>
+        <button class="menu-overlay__close" type="button" aria-label="Закрыть меню" data-menu-close>
+          <svg viewBox="0 0 42 60" aria-hidden="true">
+            <g class="menu-overlay__close-base">
+              <path d="M3.58584 3.50396C3.5818 3.50988 3.50569 3.59453 3.54787 3.84836C3.61544 4.255 4.55504 4.80532 5.16398 5.49885C6.5691 7.09913 7.97 9.63448 9.73036 12.3832C11.079 14.4891 12.7356 17.5716 14.0035 19.511C15.729 22.1506 16.8986 23.5993 17.7586 25.065C18.5721 26.4515 19.8542 27.9336 21.0972 29.6102C22.8754 32.0087 24.0193 33.395 24.9344 34.3508C25.5069 34.9487 25.9494 35.2014 26.3692 35.6154C27.5268 36.7568 29.024 39.5807 29.8311 40.9663C30.7242 42.4994 32.3702 44.9612 34.2531 47.8747C34.8421 48.8662 35.4004 49.8261 36.3568 51.3154C36.9812 52.2601 37.8879 53.5885 39.0156 55.194" />
+              <path d="M2.39211 55.5937C2.55042 55.2607 2.83033 54.6934 3.27737 53.9722C3.79538 53.1365 4.43499 52.7983 5.16748 51.8734C6.12244 50.6676 6.91677 49.2018 7.59362 47.9194C8.52875 46.1476 11.8113 40.9839 16.7102 33.8752C21.2304 27.3159 22.504 26.0218 23.732 24.2092C25.0419 22.2758 26.6645 19.6293 27.6827 18.0733C29.0361 16.0052 32.4388 10.8739 35.0697 6.95163C35.5372 6.34254 35.9482 5.88244 36.3765 5.36367C36.8047 4.8449 37.2377 4.28139 37.6838 3.70081" />
+            </g>
+            <g class="menu-overlay__close-fill">
+              <path d="M3.58584 3.50396C3.5818 3.50988 3.50569 3.59453 3.54787 3.84836C3.61544 4.255 4.55504 4.80532 5.16398 5.49885C6.5691 7.09913 7.97 9.63448 9.73036 12.3832C11.079 14.4891 12.7356 17.5716 14.0035 19.511C15.729 22.1506 16.8986 23.5993 17.7586 25.065C18.5721 26.4515 19.8542 27.9336 21.0972 29.6102C22.8754 32.0087 24.0193 33.395 24.9344 34.3508C25.5069 34.9487 25.9494 35.2014 26.3692 35.6154C27.5268 36.7568 29.024 39.5807 29.8311 40.9663C30.7242 42.4994 32.3702 44.9612 34.2531 47.8747C34.8421 48.8662 35.4004 49.8261 36.3568 51.3154C36.9812 52.2601 37.8879 53.5885 39.0156 55.194" />
+              <path d="M2.39211 55.5937C2.55042 55.2607 2.83033 54.6934 3.27737 53.9722C3.79538 53.1365 4.43499 52.7983 5.16748 51.8734C6.12244 50.6676 6.91677 49.2018 7.59362 47.9194C8.52875 46.1476 11.8113 40.9839 16.7102 33.8752C21.2304 27.3159 22.504 26.0218 23.732 24.2092C25.0419 22.2758 26.6645 19.6293 27.6827 18.0733C29.0361 16.0052 32.4388 10.8739 35.0697 6.95163C35.5372 6.34254 35.9482 5.88244 36.3765 5.36367C36.8047 4.8449 37.2377 4.28139 37.6838 3.70081" />
+            </g>
+          </svg>
+        </button>
+
+        <nav class="menu-overlay__nav" aria-label="Меню сайта">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="specialOrder.html">Спецзаказ</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="order-overlay" aria-labelledby="order-title" aria-hidden="true" hidden>
+        <button type="button" aria-label="Закрыть форму заказа" data-order-close>
+          <svg viewBox="0 0 42 60" aria-hidden="true">
+            <g>
+              <path d="M3.58584 3.50396C3.5818 3.50988 3.50569 3.59453 3.54787 3.84836C3.61544 4.255 4.55504 4.80532 5.16398 5.49885C6.5691 7.09913 7.97 9.63448 9.73036 12.3832C11.079 14.4891 12.7356 17.5716 14.0035 19.511C15.729 22.1506 16.8986 23.5993 17.7586 25.065C18.5721 26.4515 19.8542 27.9336 21.0972 29.6102C22.8754 32.0087 24.0193 33.395 24.9344 34.3508C25.5069 34.9487 25.9494 35.2014 26.3692 35.6154C27.5268 36.7568 29.024 39.5807 29.8311 40.9663C30.7242 42.4994 32.3702 44.9612 34.2531 47.8747C34.8421 48.8662 35.4004 49.8261 36.3568 51.3154C36.9812 52.2601 37.8879 53.5885 39.0156 55.194" />
+              <path d="M2.39211 55.5937C2.55042 55.2607 2.83033 54.6934 3.27737 53.9722C3.79538 53.1365 4.43499 52.7983 5.16748 51.8734C6.12244 50.6676 6.91677 49.2018 7.59362 47.9194C8.52875 46.1476 11.8113 40.9839 16.7102 33.8752C21.2304 27.3159 22.504 26.0218 23.732 24.2092C25.0419 22.2758 26.6645 19.6293 27.6827 18.0733C29.0361 16.0052 32.4388 10.8739 35.0697 6.95163C35.5372 6.34254 35.9482 5.88244 36.3765 5.36367C36.8047 4.8449 37.2377 4.28139 37.6838 3.70081" />
+            </g>
+          </svg>
+        </button>
+
+        <form>
+          <header>
+            <h2 id="order-title"><span>Заполните</span><span>форму</span><span>заказа</span></h2>
+          </header>
+
+          <section aria-labelledby="personal-title">
+            <h3 id="personal-title">Личная информация</h3>
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" autocomplete="name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" />
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" inputmode="tel" autocomplete="tel" />
+            </label>
+            <label>
+              <span>Telegram</span>
+              <input type="text" name="telegram" autocomplete="off" spellcheck="false" />
+            </label>
+            <label>
+              <span>Город</span>
+              <input type="text" name="city" autocomplete="address-level2" />
+            </label>
+            <label>
+              <span>Адрес</span>
+              <input type="text" name="address" autocomplete="street-address" />
+            </label>
+            <label>
+              <span>Почтовый индекс</span>
+              <input type="text" name="postal-code" inputmode="numeric" pattern="[0-9]*" autocomplete="postal-code" />
+            </label>
+          </section>
+
+          <fieldset>
+            <legend>Доставка</legend>
+            <label>
+              <input type="radio" name="delivery" value="standard" checked />
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <path d="M18 2 C10 2, 4 8, 3 17 C2 26, 9 34, 18 34 C27 34, 34 28, 34 18 C34 9, 27 2, 18 2Z"/>
+                <path d="M18 10 C14 10, 10 14, 10 18 C10 23, 14 26, 18 26 C23 26, 26 23, 26 18 C26 14, 23 10, 18 10Z"/>
+              </svg>
+              <span>Стандартная доставка</span>
+              <span>Бесплатно</span>
+            </label>
+            <label>
+              <input type="radio" name="delivery" value="express" />
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <path d="M18 2 C10 2, 4 8, 3 17 C2 26, 9 34, 18 34 C27 34, 34 28, 34 18 C34 9, 27 2, 18 2Z"/>
+                <path d="M18 10 C14 10, 10 14, 10 18 C10 23, 14 26, 18 26 C23 26, 26 23, 26 18 C26 14, 23 10, 18 10Z"/>
+              </svg>
+              <span>Экспресс доставка</span>
+              <span>500 ₽</span>
+            </label>
+          </fieldset>
+
+          <button type="submit">
+            <svg viewBox="3 3 201 40" aria-hidden="true">
+              <path d="M25.3 3.6 C19.0 3.2 13.1 4.9 9.3 7.8 C5.5 10.6 4.0 14.2 3.7 18.2 C3.4 20.9 3.1 23.6 3.6 26.8 C4.3 31.0 6.4 35.0 10.6 38.1 C14.7 41.2 20.3 42.9 27.5 42.6 C32.2 42.4 37.0 42.8 41.6 42.3 C46.1 41.8 50.7 42.7 55.2 42.2 C60.0 41.6 64.8 42.5 69.5 42.1 C74.2 41.7 79.0 42.6 83.8 42.2 C88.6 41.8 93.4 42.7 98.2 42.2 C103.0 41.7 107.8 42.6 112.6 42.1 C117.4 41.6 122.2 42.5 127.0 42.0 C131.8 41.5 136.6 42.4 141.4 42.1 C146.2 41.8 151.0 42.6 155.8 42.2 C160.6 41.9 165.4 42.7 170.2 42.3 C174.8 41.9 179.4 42.5 183.8 41.8 C189.8 40.9 194.8 39.0 198.6 35.9 C202.4 32.8 203.8 28.9 203.6 24.8 C203.4 22.0 203.6 19.2 203.1 16.4 C202.4 12.2 200.5 8.6 196.6 6.1 C192.6 3.6 186.8 2.9 180.2 3.5 C175.4 3.9 170.6 3.1 165.8 3.6 C161.0 4.1 156.2 3.2 151.4 3.7 C146.6 4.2 141.8 3.3 137.0 3.8 C132.2 4.3 127.4 3.4 122.6 3.9 C117.8 4.4 113.0 3.5 108.2 4.0 C103.4 4.5 98.6 3.6 93.8 4.1 C89.0 4.6 84.2 3.7 79.4 4.2 C74.6 4.7 69.8 3.8 65.0 4.3 C60.2 4.8 55.4 3.9 50.6 4.4 C45.8 4.9 41.0 4.0 36.2 4.5 C32.0 4.9 28.0 3.9 25.3 3.6 Z"/>
+              <path d="M25.3 3.6 C19.0 3.2 13.1 4.9 9.3 7.8 C5.5 10.6 4.0 14.2 3.7 18.2 C3.4 20.9 3.1 23.6 3.6 26.8 C4.3 31.0 6.4 35.0 10.6 38.1 C14.7 41.2 20.3 42.9 27.5 42.6 C32.2 42.4 37.0 42.8 41.6 42.3 C46.1 41.8 50.7 42.7 55.2 42.2 C60.0 41.6 64.8 42.5 69.5 42.1 C74.2 41.7 79.0 42.6 83.8 42.2 C88.6 41.8 93.4 42.7 98.2 42.2 C103.0 41.7 107.8 42.6 112.6 42.1 C117.4 41.6 122.2 42.5 127.0 42.0 C131.8 41.5 136.6 42.4 141.4 42.1 C146.2 41.8 151.0 42.6 155.8 42.2 C160.6 41.9 165.4 42.7 170.2 42.3 C174.8 41.9 179.4 42.5 183.8 41.8 C189.8 40.9 194.8 39.0 198.6 35.9 C202.4 32.8 203.8 28.9 203.6 24.8 C203.4 22.0 203.6 19.2 203.1 16.4 C202.4 12.2 200.5 8.6 196.6 6.1 C192.6 3.6 186.8 2.9 180.2 3.5 C175.4 3.9 170.6 3.1 165.8 3.6 C161.0 4.1 156.2 3.2 151.4 3.7 C146.6 4.2 141.8 3.3 137.0 3.8 C132.2 4.3 127.4 3.4 122.6 3.9 C117.8 4.4 113.0 3.5 108.2 4.0 C103.4 4.5 98.6 3.6 93.8 4.1 C89.0 4.6 84.2 3.7 79.4 4.2 C74.6 4.7 69.8 3.8 65.0 4.3 C60.2 4.8 55.4 3.9 50.6 4.4 C45.8 4.9 41.0 4.0 36.2 4.5 C32.0 4.9 28.0 3.9 25.3 3.6 Z"/>
+            </svg>
+            <span>Подтвердить заказ</span>
+          </button>
+        </form>
+
+        <section aria-labelledby="order-success-title" aria-live="polite" data-order-success hidden>
+          <h2 id="order-success-title"><span>Ваш</span><span>заказ</span><span>принят</span></h2>
+          <p>Ссылка на оплату отправлена на Email</p>
+          <a href="../index.html">
+            <img src="../DesignEkran/svg/Strelki_Back_To_House.svg" alt="" width="311" height="173" aria-hidden="true" />
+            <img src="../DesignEkran/svg/House_Back_Forma.svg" alt="" width="77" height="77" aria-hidden="true" />
+            <img src="../DesignEkran/svg/House_Back_Forma_Hover.svg" alt="" width="88" height="119" aria-hidden="true" />
+            <span class="visually-hidden">Вернуться на главную</span>
+          </a>
+        </section>
+      </section>
+
+      <main>
+        <div class="container">
+          <section class="favorites-hero" aria-labelledby="cart-title">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+              <a href="../index.html">
+                <img src="../DesignEkran/svg/Bread_House.svg" alt="" width="32" height="32" />
+                <img src="../DesignEkran/svg/Bread_House_Hover.svg" alt="" width="32" height="32" aria-hidden="true" />
+                <span class="visually-hidden">Главная</span>
+              </a>
+              <span aria-hidden="true">/</span>
+            </nav>
+
+            <h1 id="cart-title">Корзина <span>4</span></h1>
+            <img class="favorites-hero__line" src="../DesignEkran/svg/Line_Cut.svg" alt="" width="1440" height="18" />
+          </section>
+
+          <section id="cart" aria-labelledby="cart-products-title">
+            <h2 class="visually-hidden" id="cart-products-title">Товары в корзине</h2>
+            <ul>
+              <li>
+                <article>
+                  <button type="button" aria-label="Добавить iPhone 17 Pro в избранное" aria-pressed="false" data-favorite>
+                    <svg viewBox="0 0 35 32" aria-hidden="true">
+                      <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21.0 6.0 C22.0 5.0 23.2 4.5 24.5 4.6 C25.7 4.7 26.9 5.1 28.0 5.8 C29.0 6.5 29.6 7.5 30.0 8.8 C30.4 10.1 30.4 11.4 30.1 12.7 C29.8 14.0 29.3 15.3 28.6 16.4 C27.9 17.5 27.0 18.5 26.0 19.4 C25.2 20.2 24.5 21.0 23.9 21.9 C23.1 23.1 22.0 24.3 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C15.4 27.4 14.0 26.5 12.7 25.5 C11.3 24.5 10.0 23.3 8.9 22.0 C7.9 20.8 7.1 19.6 6.5 18.3 C5.9 17.0 5.5 15.6 5.1 14.3 C4.8 13.1 4.7 11.9 4.7 10.8 C4.7 9.6 5.0 8.5 5.6 7.6 C6.2 6.7 7.1 6.0 8.3 5.5 C9.7 4.9 11.2 5.1 12.7 5.9 C13.3 6.2 13.9 6.6 14.4 7.0 C14.6 7.2 14.7 7.4 14.4 7.6 Z"/>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange.webp 1x,
+                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@2x.webp 2x,
+                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@3x.webp 3x
+                        "
+                      />
+                      <img
+                        src="../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange.png"
+                        srcset="
+                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange.png 1x,
+                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@2x.png 2x,
+                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@3x.png 3x
+                        "
+                        alt="iPhone 17 Pro в цвете Orange"
+                        width="189"
+                        height="234"
+                      />
+                    </picture>
+                  </figure>
+                  <div>
+                    <h3><a href="product.html">Apple iPhone 17 Pro</a></h3>
+                    <p>512gb Orange (Sim + Esim)</p>
+                    <p>89 000 ₽</p>
+                  </div>
+                  <form aria-label="Количество iPhone 17 Pro">
+                    <svg viewBox="0 0 150 64" aria-hidden="true">
+                      <path d="M24 3 C16 4, 8 8, 5 17 C2 26, 4 38, 9 47 C14 57, 25 61, 39 60 C55 59, 66 62, 80 60 C96 58, 111 61, 126 59 C139 57, 146 48, 147 36 C148 25, 145 14, 137 8 C128 1, 115 4, 101 3 C84 2, 67 5, 49 4 C39 3, 31 2, 24 3Z"/>
+                    </svg>
+                    <button type="button" aria-label="Уменьшить количество">
+                      <img src="../DesignEkran/svg/Minus.svg" alt="" width="27" height="5" />
+                    </button>
+                    <output>1</output>
+                    <button type="button" aria-label="Увеличить количество">
+                      <img src="../DesignEkran/svg/Plus.svg" alt="" width="27" height="27" />
+                    </button>
+                  </form>
+                  <button type="button" aria-label="Удалить iPhone 17 Pro из корзины">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                      <path d="M31 3 C19 4, 9 11, 5 22 C1 34, 4 47, 14 56 C24 65, 39 63, 50 56 C60 49, 64 36, 60 24 C56 12, 45 2, 31 3Z"/>
+                    </svg>
+                    <img src="../DesignEkran/svg/Mini-Krestik.svg" alt="" width="20" height="20" />
+                  </button>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <button type="button" aria-label="Убрать iPhone Air из избранного" aria-pressed="true" data-favorite>
+                    <svg viewBox="0 0 35 32" aria-hidden="true">
+                      <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21.0 6.0 C22.0 5.0 23.2 4.5 24.5 4.6 C25.7 4.7 26.9 5.1 28.0 5.8 C29.0 6.5 29.6 7.5 30.0 8.8 C30.4 10.1 30.4 11.4 30.1 12.7 C29.8 14.0 29.3 15.3 28.6 16.4 C27.9 17.5 27.0 18.5 26.0 19.4 C25.2 20.2 24.5 21.0 23.9 21.9 C23.1 23.1 22.0 24.3 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C15.4 27.4 14.0 26.5 12.7 25.5 C11.3 24.5 10.0 23.3 8.9 22.0 C7.9 20.8 7.1 19.6 6.5 18.3 C5.9 17.0 5.5 15.6 5.1 14.3 C4.8 13.1 4.7 11.9 4.7 10.8 C4.7 9.6 5.0 8.5 5.6 7.6 C6.2 6.7 7.1 6.0 8.3 5.5 C9.7 4.9 11.2 5.1 12.7 5.9 C13.3 6.2 13.9 6.6 14.4 7.0 C14.6 7.2 14.7 7.4 14.4 7.6 Z"/>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.webp 1x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@2x.webp 2x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@3x.webp 3x
+                        "
+                      />
+                      <img
+                        src="../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.png"
+                        srcset="
+                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.png 1x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@2x.png 2x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@3x.png 3x
+                        "
+                        alt="iPhone Air в голубом цвете"
+                        width="189"
+                        height="234"
+                      />
+                    </picture>
+                  </figure>
+                  <div>
+                    <h3><a href="product.html">Apple iPhone Air</a></h3>
+                    <p>256gb Blue (ESim + Esim)</p>
+                    <p>67 000 ₽</p>
+                  </div>
+                  <form aria-label="Количество iPhone Air">
+                    <svg viewBox="0 0 150 64" aria-hidden="true">
+                      <path d="M24 3 C16 4, 8 8, 5 17 C2 26, 4 38, 9 47 C14 57, 25 61, 39 60 C55 59, 66 62, 80 60 C96 58, 111 61, 126 59 C139 57, 146 48, 147 36 C148 25, 145 14, 137 8 C128 1, 115 4, 101 3 C84 2, 67 5, 49 4 C39 3, 31 2, 24 3Z"/>
+                    </svg>
+                    <button type="button" aria-label="Уменьшить количество">
+                      <img src="../DesignEkran/svg/Minus.svg" alt="" width="27" height="5" />
+                    </button>
+                    <output>1</output>
+                    <button type="button" aria-label="Увеличить количество">
+                      <img src="../DesignEkran/svg/Plus.svg" alt="" width="27" height="27" />
+                    </button>
+                  </form>
+                  <button type="button" aria-label="Удалить iPhone Air из корзины">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                      <path d="M31 3 C19 4, 9 11, 5 22 C1 34, 4 47, 14 56 C24 65, 39 63, 50 56 C60 49, 64 36, 60 24 C56 12, 45 2, 31 3Z"/>
+                    </svg>
+                    <img src="../DesignEkran/svg/Mini-Krestik.svg" alt="" width="20" height="20" />
+                  </button>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <button type="button" aria-label="Добавить AirPods Pro 3 в избранное" aria-pressed="false" data-favorite>
+                    <svg viewBox="0 0 35 32" aria-hidden="true">
+                      <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21.0 6.0 C22.0 5.0 23.2 4.5 24.5 4.6 C25.7 4.7 26.9 5.1 28.0 5.8 C29.0 6.5 29.6 7.5 30.0 8.8 C30.4 10.1 30.4 11.4 30.1 12.7 C29.8 14.0 29.3 15.3 28.6 16.4 C27.9 17.5 27.0 18.5 26.0 19.4 C25.2 20.2 24.5 21.0 23.9 21.9 C23.1 23.1 22.0 24.3 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C15.4 27.4 14.0 26.5 12.7 25.5 C11.3 24.5 10.0 23.3 8.9 22.0 C7.9 20.8 7.1 19.6 6.5 18.3 C5.9 17.0 5.5 15.6 5.1 14.3 C4.8 13.1 4.7 11.9 4.7 10.8 C4.7 9.6 5.0 8.5 5.6 7.6 C6.2 6.7 7.1 6.0 8.3 5.5 C9.7 4.9 11.2 5.1 12.7 5.9 C13.3 6.2 13.9 6.6 14.4 7.0 C14.6 7.2 14.7 7.4 14.4 7.6 Z"/>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white.webp 1x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@2x.webp 2x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@3x.webp 3x
+                        "
+                      />
+                      <img
+                        src="../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white.png"
+                        srcset="
+                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white.png 1x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@2x.png 2x,
+                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@3x.png 3x
+                        "
+                        alt="Apple AirPods Pro 3"
+                        width="189"
+                        height="234"
+                      />
+                    </picture>
+                  </figure>
+                  <div>
+                    <h3><a href="product.html">Apple AirPods Pro 3</a></h3>
+                    <p>46 000 ₽</p>
+                  </div>
+                  <form aria-label="Количество AirPods Pro 3">
+                    <svg viewBox="0 0 150 64" aria-hidden="true">
+                      <path d="M24 3 C16 4, 8 8, 5 17 C2 26, 4 38, 9 47 C14 57, 25 61, 39 60 C55 59, 66 62, 80 60 C96 58, 111 61, 126 59 C139 57, 146 48, 147 36 C148 25, 145 14, 137 8 C128 1, 115 4, 101 3 C84 2, 67 5, 49 4 C39 3, 31 2, 24 3Z"/>
+                    </svg>
+                    <button type="button" aria-label="Уменьшить количество">
+                      <img src="../DesignEkran/svg/Minus.svg" alt="" width="27" height="5" />
+                    </button>
+                    <output>2</output>
+                    <button type="button" aria-label="Увеличить количество">
+                      <img src="../DesignEkran/svg/Plus.svg" alt="" width="27" height="27" />
+                    </button>
+                  </form>
+                  <button type="button" aria-label="Удалить AirPods Pro 3 из корзины">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                      <path d="M31 3 C19 4, 9 11, 5 22 C1 34, 4 47, 14 56 C24 65, 39 63, 50 56 C60 49, 64 36, 60 24 C56 12, 45 2, 31 3Z"/>
+                    </svg>
+                    <img src="../DesignEkran/svg/Mini-Krestik.svg" alt="" width="20" height="20" />
+                  </button>
+                </article>
+              </li>
+            </ul>
+
+            <p>К оплате: <strong>202 000 ₽</strong></p>
+            <button type="button" data-order-open>
+              <svg viewBox="3 3 201 40" aria-hidden="true">
+                <path d="M25.3 3.6 C19.0 3.2 13.1 4.9 9.3 7.8 C5.5 10.6 4.0 14.2 3.7 18.2 C3.4 20.9 3.1 23.6 3.6 26.8 C4.3 31.0 6.4 35.0 10.6 38.1 C14.7 41.2 20.3 42.9 27.5 42.6 C32.2 42.4 37.0 42.8 41.6 42.3 C46.1 41.8 50.7 42.7 55.2 42.2 C60.0 41.6 64.8 42.5 69.5 42.1 C74.2 41.7 79.0 42.6 83.8 42.2 C88.6 41.8 93.4 42.7 98.2 42.2 C103.0 41.7 107.8 42.6 112.6 42.1 C117.4 41.6 122.2 42.5 127.0 42.0 C131.8 41.5 136.6 42.4 141.4 42.1 C146.2 41.8 151.0 42.6 155.8 42.2 C160.6 41.9 165.4 42.7 170.2 42.3 C174.8 41.9 179.4 42.5 183.8 41.8 C189.8 40.9 194.8 39.0 198.6 35.9 C202.4 32.8 203.8 28.9 203.6 24.8 C203.4 22.0 203.6 19.2 203.1 16.4 C202.4 12.2 200.5 8.6 196.6 6.1 C192.6 3.6 186.8 2.9 180.2 3.5 C175.4 3.9 170.6 3.1 165.8 3.6 C161.0 4.1 156.2 3.2 151.4 3.7 C146.6 4.2 141.8 3.3 137.0 3.8 C132.2 4.3 127.4 3.4 122.6 3.9 C117.8 4.4 113.0 3.5 108.2 4.0 C103.4 4.5 98.6 3.6 93.8 4.1 C89.0 4.6 84.2 3.7 79.4 4.2 C74.6 4.7 69.8 3.8 65.0 4.3 C60.2 4.8 55.4 3.9 50.6 4.4 C45.8 4.9 41.0 4.0 36.2 4.5 C32.0 4.9 28.0 3.9 25.3 3.6 Z"/>
+                <path d="M25.3 3.6 C19.0 3.2 13.1 4.9 9.3 7.8 C5.5 10.6 4.0 14.2 3.7 18.2 C3.4 20.9 3.1 23.6 3.6 26.8 C4.3 31.0 6.4 35.0 10.6 38.1 C14.7 41.2 20.3 42.9 27.5 42.6 C32.2 42.4 37.0 42.8 41.6 42.3 C46.1 41.8 50.7 42.7 55.2 42.2 C60.0 41.6 64.8 42.5 69.5 42.1 C74.2 41.7 79.0 42.6 83.8 42.2 C88.6 41.8 93.4 42.7 98.2 42.2 C103.0 41.7 107.8 42.6 112.6 42.1 C117.4 41.6 122.2 42.5 127.0 42.0 C131.8 41.5 136.6 42.4 141.4 42.1 C146.2 41.8 151.0 42.6 155.8 42.2 C160.6 41.9 165.4 42.7 170.2 42.3 C174.8 41.9 179.4 42.5 183.8 41.8 C189.8 40.9 194.8 39.0 198.6 35.9 C202.4 32.8 203.8 28.9 203.6 24.8 C203.4 22.0 203.6 19.2 203.1 16.4 C202.4 12.2 200.5 8.6 196.6 6.1 C192.6 3.6 186.8 2.9 180.2 3.5 C175.4 3.9 170.6 3.1 165.8 3.6 C161.0 4.1 156.2 3.2 151.4 3.7 C146.6 4.2 141.8 3.3 137.0 3.8 C132.2 4.3 127.4 3.4 122.6 3.9 C117.8 4.4 113.0 3.5 108.2 4.0 C103.4 4.5 98.6 3.6 93.8 4.1 C89.0 4.6 84.2 3.7 79.4 4.2 C74.6 4.7 69.8 3.8 65.0 4.3 C60.2 4.8 55.4 3.9 50.6 4.4 C45.8 4.9 41.0 4.0 36.2 4.5 C32.0 4.9 28.0 3.9 25.3 3.6 Z"/>
+              </svg>
+              <span>Перейти к оформлению</span>
+            </button>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              ../Assets/desktop/Footer_Back/footerwhite.webp 1x,
+              ../Assets/desktop/Footer_Back/footerwhite@2x.webp 2x
+            "
+          />
+          <img
+            src="../Assets/desktop/Footer_Back/footerwhite.png"
+            srcset="
+              ../Assets/desktop/Footer_Back/footerwhite.png 1x,
+              ../Assets/desktop/Footer_Back/footerwhite@2x.png 2x
+            "
+            alt=""
+            width="3300"
+            height="3152"
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="container">
+          <section aria-label="Свяжитесь с нами">
+            <h2>Свяжитесь<br>с нами</h2>
+            <address>
+              <ul>
+                <li>
+                  <span>Телеграм</span>
+                  <img src="../Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="https://t.me/theosk" target="_blank" rel="noreferrer">@theosk</a>
+                </li>
+                <li>
+                  <span>Телефон</span>
+                  <img src="../Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="tel:+79977770303">+7 997-777-03-03</a>
+                </li>
+                <li>
+                  <span>Почта</span>
+                  <img src="../Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="mailto:theosk@mail.ru">theosk@mail.ru</a>
+                </li>
+              </ul>
+            </address>
+          </section>
+        </div>
+        <p aria-hidden="true">THEOSKSTORE</p>
+      </footer>
+    </div>
+  </body>
+</html>

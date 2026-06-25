@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | THEOSK STORE</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/home.js" defer></script>
+  </head>
+  <body id="home" class="error-page">
+    <div>
+      <header>
+        <div class="container">
+          <nav aria-label="Открыть меню">
+            <ul>
+              <li>
+                <button type="button" aria-controls="site-menu" aria-expanded="false" data-menu-open>
+                  <svg class="burger-icon" viewBox="0 0 56 54" aria-hidden="true">
+                    <path class="burger-icon__line burger-icon__line--top" d="M3 4 C13 3, 23 5, 34 3 C41 3, 47 4, 53 4" />
+                    <path class="burger-icon__line burger-icon__line--middle" d="M3 28 C13 26, 22 29, 31 28 C40 27, 47 29, 53 28" />
+                    <path class="burger-icon__line burger-icon__line--bottom" d="M3 50 C14 49, 25 51, 35 50 C42 50, 48 51, 53 50" />
+                  </svg>
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="index.html">THEOSK STORE</a>
+
+          <nav aria-label="Избранное и корзина">
+            <ul>
+              <li>
+                <a href="pages/favorites.html">
+                  <img src="DesignEkran/svg/Heart.svg" alt="Перейти в избранное" width="28" height="28" />
+                  <img src="DesignEkran/svg/HeartHover.svg" alt="" width="28" height="28" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="pages/cart.html">
+                  <img src="DesignEkran/svg/Korzina.svg" alt="Перейти в корзину" width="28" height="28" />
+                  <img src="DesignEkran/svg/KorzinaHover.svg" alt="" width="28" height="28" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <aside class="menu-overlay" id="site-menu" aria-hidden="true" hidden>
+        <button class="menu-overlay__close" type="button" aria-label="Закрыть меню" data-menu-close>
+          <svg viewBox="0 0 42 60" aria-hidden="true">
+            <g class="menu-overlay__close-base">
+              <path d="M4 4 C13 16, 23 31, 39 55" />
+              <path d="M2 56 C12 39, 23 24, 38 4" />
+            </g>
+            <g class="menu-overlay__close-fill">
+              <path d="M4 4 C13 16, 23 31, 39 55" />
+              <path d="M2 56 C12 39, 23 24, 38 4" />
+            </g>
+          </svg>
+        </button>
+
+        <nav class="menu-overlay__nav" aria-label="Меню сайта">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="pages/specialOrder.html">Спецзаказ</a></li>
+            <li><a href="pages/catalog.html">Каталог</a></li>
+            <li><a href="pages/about.html">О нас</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <div class="container">
+          <section class="not-found" aria-labelledby="not-found-title">
+            <section aria-label="Ошибка 404">
+              <img src="DesignEkran/svg/Stroke_For_Text.svg" alt="" width="988" height="171" aria-hidden="true" />
+              <p>404</p>
+              <h1 id="not-found-title">Страница не найдена</h1>
+            </section>
+            <a href="index.html">
+              <img src="DesignEkran/svg/Strelki_Back_To_House.svg" alt="" width="311" height="173" aria-hidden="true" />
+              <img src="DesignEkran/svg/House_Back_Forma.svg" alt="" width="77" height="77" aria-hidden="true" />
+              <img src="DesignEkran/svg/House_Back_Forma_Hover.svg" alt="" width="88" height="119" aria-hidden="true" />
+              <span class="visually-hidden">Вернуться на главную</span>
+            </a>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              Assets/desktop/Footer_Back/footerwhite.webp 1x,
+              Assets/desktop/Footer_Back/footerwhite@2x.webp 2x
+            "
+          />
+          <img
+            src="Assets/desktop/Footer_Back/footerwhite.png"
+            srcset="
+              Assets/desktop/Footer_Back/footerwhite.png 1x,
+              Assets/desktop/Footer_Back/footerwhite@2x.png 2x
+            "
+            alt=""
+            width="3300"
+            height="3152"
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="container">
+          <section aria-label="Свяжитесь с нами">
+            <h2>Свяжитесь<br />с нами</h2>
+            <address>
+              <ul>
+                <li>
+                  <span>Телеграм</span>
+                  <img src="Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="https://t.me/theosk" target="_blank" rel="noreferrer">@theosk</a>
+                </li>
+                <li>
+                  <span>Телефон</span>
+                  <img src="Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="tel:+79977770303">+7 997-777-03-03</a>
+                </li>
+                <li>
+                  <span>Почта</span>
+                  <img src="Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="mailto:theosk@mail.ru">theosk@mail.ru</a>
+                </li>
+              </ul>
+            </address>
+          </section>
+        </div>
+        <p aria-hidden="true">THEOSKSTORE</p>
+      </footer>
+    </div>
+  </body>
+</html>

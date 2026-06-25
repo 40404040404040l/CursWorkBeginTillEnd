@@ -1,0 +1,10 @@
+<svg width="300" height="64" viewBox="0 0 300 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M27 3 C16 3 8 8 5 17 C2 26 3 39 9 48 C15 58 27 61 42 60 C78 58 109 61 145 60 C182 59 214 61 251 59 C271 58 287 53 293 43 C299 34 298 21 292 13 C285 4 272 2 255 4 C218 5 185 2 149 4 C112 5 79 2 43 4 C36 4 31 3 27 3Z"
+    fill="black"
+    stroke="black"
+    stroke-width="1.3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

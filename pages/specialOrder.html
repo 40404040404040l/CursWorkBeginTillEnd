@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Спецзаказ | THEOSK STORE</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <script src="../scripts/home.js" defer></script>
+  </head>
+  <body id="home" class="favorites-page special-order-page">
+    <div>
+      <header>
+        <div class="container">
+          <nav aria-label="Открыть меню">
+            <ul>
+              <li>
+                <button type="button" aria-controls="site-menu" aria-expanded="false" data-menu-open>
+                  <svg class="burger-icon" viewBox="0 0 56 54" aria-hidden="true">
+                    <path class="burger-icon__line burger-icon__line--top" d="M3 4 C13 3, 23 5, 34 3 C41 3, 47 4, 53 4" />
+                    <path class="burger-icon__line burger-icon__line--middle" d="M3 28 C13 26, 22 29, 31 28 C40 27, 47 29, 53 28" />
+                    <path class="burger-icon__line burger-icon__line--bottom" d="M3 50 C14 49, 25 51, 35 50 C42 50, 48 51, 53 50" />
+                  </svg>
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="../index.html">THEOSK STORE</a>
+
+          <nav aria-label="Избранное и корзина">
+            <ul>
+              <li>
+                <a href="favorites.html">
+                  <img src="../DesignEkran/svg/Heart.svg" alt="Перейти в избранное" width="28" height="28" />
+                  <img src="../DesignEkran/svg/HeartHover.svg" alt="" width="28" height="28" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="cart.html">
+                  <img src="../DesignEkran/svg/Korzina.svg" alt="Перейти в корзину" width="28" height="28" />
+                  <img src="../DesignEkran/svg/KorzinaHover.svg" alt="" width="28" height="28" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <aside class="menu-overlay" id="site-menu" aria-hidden="true" hidden>
+        <button class="menu-overlay__close" type="button" aria-label="Закрыть меню" data-menu-close>
+          <svg viewBox="0 0 42 60" aria-hidden="true">
+            <g class="menu-overlay__close-base">
+              <path d="M4 4 C13 16, 23 31, 39 55" />
+              <path d="M2 56 C12 39, 23 24, 38 4" />
+            </g>
+            <g class="menu-overlay__close-fill">
+              <path d="M4 4 C13 16, 23 31, 39 55" />
+              <path d="M2 56 C12 39, 23 24, 38 4" />
+            </g>
+          </svg>
+        </button>
+
+        <nav class="menu-overlay__nav" aria-label="Меню сайта">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="specialOrder.html" aria-current="page">Спецзаказ</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section
+        class="order-overlay special-order-success"
+        aria-labelledby="special-order-success-title"
+        aria-hidden="true"
+        data-special-order-success-overlay
+        hidden
+      >
+        <section aria-labelledby="special-order-success-title" aria-live="polite">
+          <h2 id="special-order-success-title"><span>Ваша</span><span>заявка</span><span>принята</span></h2>
+          <p>Ожидайте. С вами свяжется наш менеджер.</p>
+          <a href="../index.html">
+            <img src="../DesignEkran/svg/Strelki_Back_To_House.svg" alt="" width="311" height="173" aria-hidden="true" />
+            <img src="../DesignEkran/svg/House_Back_Forma.svg" alt="" width="77" height="77" aria-hidden="true" />
+            <img src="../DesignEkran/svg/House_Back_Forma_Hover.svg" alt="" width="88" height="119" aria-hidden="true" />
+            <span class="visually-hidden">Вернуться на главную</span>
+          </a>
+        </section>
+      </section>
+
+      <main>
+        <div class="container">
+          <section class="favorites-hero" aria-labelledby="special-order-title">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+              <a href="../index.html">
+                <img src="../DesignEkran/svg/Bread_House.svg" alt="" width="32" height="32" />
+                <img src="../DesignEkran/svg/Bread_House_Hover.svg" alt="" width="32" height="32" aria-hidden="true" />
+                <span class="visually-hidden">Главная</span>
+              </a>
+              <span aria-hidden="true">/</span>
+            </nav>
+
+            <h1 id="special-order-title">Спецзаказ</h1>
+            <img class="favorites-hero__line" src="../DesignEkran/svg/Line_Cut.svg" alt="" width="1440" height="18" />
+          </section>
+
+          <section class="special-order" aria-labelledby="delivery-title">
+            <div class="special-order__copy">
+              <h2 id="delivery-title">Доставим<br />любой товар</h2>
+
+              <p>Любую технику. Любой бренд. Любую конфигурацию.<br />Самые редкие и снятые с производства.</p>
+
+              <section>
+                <h3>Вы опишите — мы найдём</h3>
+                <p>Не знаете название или точную модель?<br />Просто расскажите, что вам нужно.</p>
+              </section>
+
+              <section>
+                <h3>Прямые поставки из других стран</h3>
+                <p>США, Европа, Япония, Китай и другие.<br />Доставим быстро и безопасно.</p>
+              </section>
+
+              <section>
+                <h3>Оригинальная техника и гарантия</h3>
+                <p>Только оригинал с официальной гарантией<br />и полной поддержкой.</p>
+              </section>
+            </div>
+
+            <form class="special-order__form" data-special-order-form>
+              <label>
+                <span class="visually-hidden">Имя</span>
+                <input type="text" name="name" placeholder="Имя" autocomplete="name" />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Телефон</span>
+                <input type="tel" name="phone" placeholder="Телефон" inputmode="tel" autocomplete="tel" />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Telegram</span>
+                <input type="text" name="telegram" placeholder="Telegram" autocomplete="off" spellcheck="false" />
+              </label>
+
+              <label>
+                <span class="visually-hidden">Опишите, что вы хотите найти</span>
+                <textarea name="request" placeholder="Опишите, что вы хотите найти"></textarea>
+              </label>
+
+              <button type="submit">Отправить заявку</button>
+              <p>Обычно отвечаем в Telegram в течение 5 минут</p>
+            </form>
+          </section>
+
+          <section class="special-order__countries" aria-labelledby="countries-title">
+            <h2 class="visually-hidden" id="countries-title">Страны поставки</h2>
+            <ul>
+              <li>
+                <img src="../DesignEkran/svg/icon-usa.svg" alt="" width="87" height="80" />
+                <span class="visually-hidden">США</span>
+              </li>
+              <li>
+                <img src="../DesignEkran/svg/icon-europe.svg" alt="" width="87" height="86" />
+                <span class="visually-hidden">Европа</span>
+              </li>
+              <li>
+                <img src="../DesignEkran/svg/icon-japan.svg" alt="" width="87" height="87" />
+                <span class="visually-hidden">Япония</span>
+              </li>
+              <li>
+                <img src="../DesignEkran/svg/icon-china.svg" alt="" width="87" height="87" />
+                <span class="visually-hidden">Китай</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              ../Assets/desktop/Footer_Back/footerwhite.webp 1x,
+              ../Assets/desktop/Footer_Back/footerwhite@2x.webp 2x
+            "
+          />
+          <img
+            src="../Assets/desktop/Footer_Back/footerwhite.png"
+            srcset="
+              ../Assets/desktop/Footer_Back/footerwhite.png 1x,
+              ../Assets/desktop/Footer_Back/footerwhite@2x.png 2x
+            "
+            alt=""
+            width="3300"
+            height="3152"
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="container">
+          <section aria-label="Свяжитесь с нами">
+            <h2>Свяжитесь<br />с нами</h2>
+            <address>
+              <ul>
+                <li>
+                  <span>Телеграм</span>
+                  <img src="../Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="https://t.me/theosk" target="_blank" rel="noreferrer">@theosk</a>
+                </li>
+                <li>
+                  <span>Телефон</span>
+                  <img src="../Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="tel:+79977770303">+7 997-777-03-03</a>
+                </li>
+                <li>
+                  <span>Почта</span>
+                  <img src="../Assets/desktop/svgfooter/strelkafooter.svg" alt="" width="243" height="9" />
+                  <a href="mailto:theosk@mail.ru">theosk@mail.ru</a>
+                </li>
+              </ul>
+            </address>
+          </section>
+        </div>
+        <p aria-hidden="true">THEOSKSTORE</p>
+      </footer>
+    </div>
+  </body>
+</html>
