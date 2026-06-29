@@ -1,0 +1,6 @@
+.git
+.DS_Store
+api/config.local.php
+postgres-data
+node_modules
+vendor

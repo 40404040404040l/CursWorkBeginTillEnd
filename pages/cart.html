@@ -35,12 +35,12 @@
             </ul>
           </nav>
 
-          <a href="../index.html">THEOSK STORE</a>
+          <a href="/theosk/">THEOSK <span>STORE</span></a>
 
           <nav aria-label="Избранное и корзина">
             <ul>
               <li>
-                <a href="favorites.html">
+                <a href="/theosk/favorites/">
                   <img src="../DesignEkran/svg/Heart.svg" alt="Перейти в избранное" width="28" height="28" />
                   <img src="../DesignEkran/svg/HeartHover.svg" alt="" width="28" height="28" aria-hidden="true" />
                 </a>
@@ -71,10 +71,12 @@
 
         <nav class="menu-overlay__nav" aria-label="Меню сайта">
           <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="specialOrder.html">Спецзаказ</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="about.html">О нас</a></li>
+            <li><a href="/theosk/">Главная</a></li>
+            <li><a href="/theosk/special-order/">Спецзаказ</a></li>
+            <li><a href="/theosk/catalog/">Каталог</a></li>
+            <li class="menu-overlay__mobile-item"><a href="/theosk/cart/">Корзина</a></li>
+            <li class="menu-overlay__mobile-item"><a href="/theosk/favorites/">Избранное</a></li>
+            <li><a href="/theosk/about/">О нас</a></li>
           </ul>
         </nav>
       </aside>
@@ -160,7 +162,7 @@
         <section aria-labelledby="order-success-title" aria-live="polite" data-order-success hidden>
           <h2 id="order-success-title"><span>Ваш</span><span>заказ</span><span>принят</span></h2>
           <p>Ссылка на оплату отправлена на Email</p>
-          <a href="../index.html">
+          <a href="/theosk/">
             <img src="../DesignEkran/svg/Strelki_Back_To_House.svg" alt="" width="311" height="173" aria-hidden="true" />
             <img src="../DesignEkran/svg/House_Back_Forma.svg" alt="" width="77" height="77" aria-hidden="true" />
             <img src="../DesignEkran/svg/House_Back_Forma_Hover.svg" alt="" width="88" height="119" aria-hidden="true" />
@@ -173,7 +175,7 @@
         <div class="container">
           <section class="favorites-hero" aria-labelledby="cart-title">
             <nav class="breadcrumbs" aria-label="Хлебные крошки">
-              <a href="../index.html">
+              <a href="/theosk/">
                 <img src="../DesignEkran/svg/Bread_House.svg" alt="" width="32" height="32" />
                 <img src="../DesignEkran/svg/Bread_House_Hover.svg" alt="" width="32" height="32" aria-hidden="true" />
                 <span class="visually-hidden">Главная</span>
@@ -181,181 +183,16 @@
               <span aria-hidden="true">/</span>
             </nav>
 
-            <h1 id="cart-title">Корзина <span>4</span></h1>
+            <h1 id="cart-title">Корзина <span>0</span></h1>
             <img class="favorites-hero__line" src="../DesignEkran/svg/Line_Cut.svg" alt="" width="1440" height="18" />
           </section>
 
-          <section id="cart" aria-labelledby="cart-products-title">
-            <h2 class="visually-hidden" id="cart-products-title">Товары в корзине</h2>
+          <section id="cart" aria-label="Корзина">
             <ul>
-              <li>
-                <article>
-                  <button type="button" aria-label="Добавить iPhone 17 Pro в избранное" aria-pressed="false" data-favorite>
-                    <svg viewBox="0 0 35 32" aria-hidden="true">
-                      <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21.0 6.0 C22.0 5.0 23.2 4.5 24.5 4.6 C25.7 4.7 26.9 5.1 28.0 5.8 C29.0 6.5 29.6 7.5 30.0 8.8 C30.4 10.1 30.4 11.4 30.1 12.7 C29.8 14.0 29.3 15.3 28.6 16.4 C27.9 17.5 27.0 18.5 26.0 19.4 C25.2 20.2 24.5 21.0 23.9 21.9 C23.1 23.1 22.0 24.3 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C15.4 27.4 14.0 26.5 12.7 25.5 C11.3 24.5 10.0 23.3 8.9 22.0 C7.9 20.8 7.1 19.6 6.5 18.3 C5.9 17.0 5.5 15.6 5.1 14.3 C4.8 13.1 4.7 11.9 4.7 10.8 C4.7 9.6 5.0 8.5 5.6 7.6 C6.2 6.7 7.1 6.0 8.3 5.5 C9.7 4.9 11.2 5.1 12.7 5.9 C13.3 6.2 13.9 6.6 14.4 7.0 C14.6 7.2 14.7 7.4 14.4 7.6 Z"/>
-                    </svg>
-                  </button>
-                  <figure>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange.webp 1x,
-                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@2x.webp 2x,
-                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@3x.webp 3x
-                        "
-                      />
-                      <img
-                        src="../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange.png"
-                        srcset="
-                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange.png 1x,
-                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@2x.png 2x,
-                          ../Assets/desktop/photo/iphone17PPM/iPhone_17_PPM_Orange/iphone-17-pro-max-cosmic-orange@3x.png 3x
-                        "
-                        alt="iPhone 17 Pro в цвете Orange"
-                        width="189"
-                        height="234"
-                      />
-                    </picture>
-                  </figure>
-                  <div>
-                    <h3><a href="product.html">Apple iPhone 17 Pro</a></h3>
-                    <p>512gb Orange (Sim + Esim)</p>
-                    <p>89 000 ₽</p>
-                  </div>
-                  <form aria-label="Количество iPhone 17 Pro">
-                    <svg viewBox="0 0 150 64" aria-hidden="true">
-                      <path d="M24 3 C16 4, 8 8, 5 17 C2 26, 4 38, 9 47 C14 57, 25 61, 39 60 C55 59, 66 62, 80 60 C96 58, 111 61, 126 59 C139 57, 146 48, 147 36 C148 25, 145 14, 137 8 C128 1, 115 4, 101 3 C84 2, 67 5, 49 4 C39 3, 31 2, 24 3Z"/>
-                    </svg>
-                    <button type="button" aria-label="Уменьшить количество">
-                      <img src="../DesignEkran/svg/Minus.svg" alt="" width="27" height="5" />
-                    </button>
-                    <output>1</output>
-                    <button type="button" aria-label="Увеличить количество">
-                      <img src="../DesignEkran/svg/Plus.svg" alt="" width="27" height="27" />
-                    </button>
-                  </form>
-                  <button type="button" aria-label="Удалить iPhone 17 Pro из корзины">
-                    <svg viewBox="0 0 64 64" aria-hidden="true">
-                      <path d="M31 3 C19 4, 9 11, 5 22 C1 34, 4 47, 14 56 C24 65, 39 63, 50 56 C60 49, 64 36, 60 24 C56 12, 45 2, 31 3Z"/>
-                    </svg>
-                    <img src="../DesignEkran/svg/Mini-Krestik.svg" alt="" width="20" height="20" />
-                  </button>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <button type="button" aria-label="Убрать iPhone Air из избранного" aria-pressed="true" data-favorite>
-                    <svg viewBox="0 0 35 32" aria-hidden="true">
-                      <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21.0 6.0 C22.0 5.0 23.2 4.5 24.5 4.6 C25.7 4.7 26.9 5.1 28.0 5.8 C29.0 6.5 29.6 7.5 30.0 8.8 C30.4 10.1 30.4 11.4 30.1 12.7 C29.8 14.0 29.3 15.3 28.6 16.4 C27.9 17.5 27.0 18.5 26.0 19.4 C25.2 20.2 24.5 21.0 23.9 21.9 C23.1 23.1 22.0 24.3 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C15.4 27.4 14.0 26.5 12.7 25.5 C11.3 24.5 10.0 23.3 8.9 22.0 C7.9 20.8 7.1 19.6 6.5 18.3 C5.9 17.0 5.5 15.6 5.1 14.3 C4.8 13.1 4.7 11.9 4.7 10.8 C4.7 9.6 5.0 8.5 5.6 7.6 C6.2 6.7 7.1 6.0 8.3 5.5 C9.7 4.9 11.2 5.1 12.7 5.9 C13.3 6.2 13.9 6.6 14.4 7.0 C14.6 7.2 14.7 7.4 14.4 7.6 Z"/>
-                    </svg>
-                  </button>
-                  <figure>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.webp 1x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@2x.webp 2x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@3x.webp 3x
-                        "
-                      />
-                      <img
-                        src="../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.png"
-                        srcset="
-                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.png 1x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@2x.png 2x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@3x.png 3x
-                        "
-                        alt="iPhone Air в голубом цвете"
-                        width="189"
-                        height="234"
-                      />
-                    </picture>
-                  </figure>
-                  <div>
-                    <h3><a href="product.html">Apple iPhone Air</a></h3>
-                    <p>256gb Blue (ESim + Esim)</p>
-                    <p>67 000 ₽</p>
-                  </div>
-                  <form aria-label="Количество iPhone Air">
-                    <svg viewBox="0 0 150 64" aria-hidden="true">
-                      <path d="M24 3 C16 4, 8 8, 5 17 C2 26, 4 38, 9 47 C14 57, 25 61, 39 60 C55 59, 66 62, 80 60 C96 58, 111 61, 126 59 C139 57, 146 48, 147 36 C148 25, 145 14, 137 8 C128 1, 115 4, 101 3 C84 2, 67 5, 49 4 C39 3, 31 2, 24 3Z"/>
-                    </svg>
-                    <button type="button" aria-label="Уменьшить количество">
-                      <img src="../DesignEkran/svg/Minus.svg" alt="" width="27" height="5" />
-                    </button>
-                    <output>1</output>
-                    <button type="button" aria-label="Увеличить количество">
-                      <img src="../DesignEkran/svg/Plus.svg" alt="" width="27" height="27" />
-                    </button>
-                  </form>
-                  <button type="button" aria-label="Удалить iPhone Air из корзины">
-                    <svg viewBox="0 0 64 64" aria-hidden="true">
-                      <path d="M31 3 C19 4, 9 11, 5 22 C1 34, 4 47, 14 56 C24 65, 39 63, 50 56 C60 49, 64 36, 60 24 C56 12, 45 2, 31 3Z"/>
-                    </svg>
-                    <img src="../DesignEkran/svg/Mini-Krestik.svg" alt="" width="20" height="20" />
-                  </button>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <button type="button" aria-label="Добавить AirPods Pro 3 в избранное" aria-pressed="false" data-favorite>
-                    <svg viewBox="0 0 35 32" aria-hidden="true">
-                      <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21.0 6.0 C22.0 5.0 23.2 4.5 24.5 4.6 C25.7 4.7 26.9 5.1 28.0 5.8 C29.0 6.5 29.6 7.5 30.0 8.8 C30.4 10.1 30.4 11.4 30.1 12.7 C29.8 14.0 29.3 15.3 28.6 16.4 C27.9 17.5 27.0 18.5 26.0 19.4 C25.2 20.2 24.5 21.0 23.9 21.9 C23.1 23.1 22.0 24.3 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C15.4 27.4 14.0 26.5 12.7 25.5 C11.3 24.5 10.0 23.3 8.9 22.0 C7.9 20.8 7.1 19.6 6.5 18.3 C5.9 17.0 5.5 15.6 5.1 14.3 C4.8 13.1 4.7 11.9 4.7 10.8 C4.7 9.6 5.0 8.5 5.6 7.6 C6.2 6.7 7.1 6.0 8.3 5.5 C9.7 4.9 11.2 5.1 12.7 5.9 C13.3 6.2 13.9 6.6 14.4 7.0 C14.6 7.2 14.7 7.4 14.4 7.6 Z"/>
-                    </svg>
-                  </button>
-                  <figure>
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white.webp 1x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@2x.webp 2x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@3x.webp 3x
-                        "
-                      />
-                      <img
-                        src="../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white.png"
-                        srcset="
-                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white.png 1x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@2x.png 2x,
-                          ../Assets/desktop/photo/iphone17/iPhone_17_White/iphone-17-white@3x.png 3x
-                        "
-                        alt="Apple AirPods Pro 3"
-                        width="189"
-                        height="234"
-                      />
-                    </picture>
-                  </figure>
-                  <div>
-                    <h3><a href="product.html">Apple AirPods Pro 3</a></h3>
-                    <p>46 000 ₽</p>
-                  </div>
-                  <form aria-label="Количество AirPods Pro 3">
-                    <svg viewBox="0 0 150 64" aria-hidden="true">
-                      <path d="M24 3 C16 4, 8 8, 5 17 C2 26, 4 38, 9 47 C14 57, 25 61, 39 60 C55 59, 66 62, 80 60 C96 58, 111 61, 126 59 C139 57, 146 48, 147 36 C148 25, 145 14, 137 8 C128 1, 115 4, 101 3 C84 2, 67 5, 49 4 C39 3, 31 2, 24 3Z"/>
-                    </svg>
-                    <button type="button" aria-label="Уменьшить количество">
-                      <img src="../DesignEkran/svg/Minus.svg" alt="" width="27" height="5" />
-                    </button>
-                    <output>2</output>
-                    <button type="button" aria-label="Увеличить количество">
-                      <img src="../DesignEkran/svg/Plus.svg" alt="" width="27" height="27" />
-                    </button>
-                  </form>
-                  <button type="button" aria-label="Удалить AirPods Pro 3 из корзины">
-                    <svg viewBox="0 0 64 64" aria-hidden="true">
-                      <path d="M31 3 C19 4, 9 11, 5 22 C1 34, 4 47, 14 56 C24 65, 39 63, 50 56 C60 49, 64 36, 60 24 C56 12, 45 2, 31 3Z"/>
-                    </svg>
-                    <img src="../DesignEkran/svg/Mini-Krestik.svg" alt="" width="20" height="20" />
-                  </button>
-                </article>
-              </li>
             </ul>
 
-            <p>К оплате: <strong>202 000 ₽</strong></p>
-            <button type="button" data-order-open>
+            <p>К оплате: <strong>0 ₽</strong></p>
+            <button type="button" data-order-open disabled>
               <svg viewBox="3 3 201 40" aria-hidden="true">
                 <path d="M25.3 3.6 C19.0 3.2 13.1 4.9 9.3 7.8 C5.5 10.6 4.0 14.2 3.7 18.2 C3.4 20.9 3.1 23.6 3.6 26.8 C4.3 31.0 6.4 35.0 10.6 38.1 C14.7 41.2 20.3 42.9 27.5 42.6 C32.2 42.4 37.0 42.8 41.6 42.3 C46.1 41.8 50.7 42.7 55.2 42.2 C60.0 41.6 64.8 42.5 69.5 42.1 C74.2 41.7 79.0 42.6 83.8 42.2 C88.6 41.8 93.4 42.7 98.2 42.2 C103.0 41.7 107.8 42.6 112.6 42.1 C117.4 41.6 122.2 42.5 127.0 42.0 C131.8 41.5 136.6 42.4 141.4 42.1 C146.2 41.8 151.0 42.6 155.8 42.2 C160.6 41.9 165.4 42.7 170.2 42.3 C174.8 41.9 179.4 42.5 183.8 41.8 C189.8 40.9 194.8 39.0 198.6 35.9 C202.4 32.8 203.8 28.9 203.6 24.8 C203.4 22.0 203.6 19.2 203.1 16.4 C202.4 12.2 200.5 8.6 196.6 6.1 C192.6 3.6 186.8 2.9 180.2 3.5 C175.4 3.9 170.6 3.1 165.8 3.6 C161.0 4.1 156.2 3.2 151.4 3.7 C146.6 4.2 141.8 3.3 137.0 3.8 C132.2 4.3 127.4 3.4 122.6 3.9 C117.8 4.4 113.0 3.5 108.2 4.0 C103.4 4.5 98.6 3.6 93.8 4.1 C89.0 4.6 84.2 3.7 79.4 4.2 C74.6 4.7 69.8 3.8 65.0 4.3 C60.2 4.8 55.4 3.9 50.6 4.4 C45.8 4.9 41.0 4.0 36.2 4.5 C32.0 4.9 28.0 3.9 25.3 3.6 Z"/>
                 <path d="M25.3 3.6 C19.0 3.2 13.1 4.9 9.3 7.8 C5.5 10.6 4.0 14.2 3.7 18.2 C3.4 20.9 3.1 23.6 3.6 26.8 C4.3 31.0 6.4 35.0 10.6 38.1 C14.7 41.2 20.3 42.9 27.5 42.6 C32.2 42.4 37.0 42.8 41.6 42.3 C46.1 41.8 50.7 42.7 55.2 42.2 C60.0 41.6 64.8 42.5 69.5 42.1 C74.2 41.7 79.0 42.6 83.8 42.2 C88.6 41.8 93.4 42.7 98.2 42.2 C103.0 41.7 107.8 42.6 112.6 42.1 C117.4 41.6 122.2 42.5 127.0 42.0 C131.8 41.5 136.6 42.4 141.4 42.1 C146.2 41.8 151.0 42.6 155.8 42.2 C160.6 41.9 165.4 42.7 170.2 42.3 C174.8 41.9 179.4 42.5 183.8 41.8 C189.8 40.9 194.8 39.0 198.6 35.9 C202.4 32.8 203.8 28.9 203.6 24.8 C203.4 22.0 203.6 19.2 203.1 16.4 C202.4 12.2 200.5 8.6 196.6 6.1 C192.6 3.6 186.8 2.9 180.2 3.5 C175.4 3.9 170.6 3.1 165.8 3.6 C161.0 4.1 156.2 3.2 151.4 3.7 C146.6 4.2 141.8 3.3 137.0 3.8 C132.2 4.3 127.4 3.4 122.6 3.9 C117.8 4.4 113.0 3.5 108.2 4.0 C103.4 4.5 98.6 3.6 93.8 4.1 C89.0 4.6 84.2 3.7 79.4 4.2 C74.6 4.7 69.8 3.8 65.0 4.3 C60.2 4.8 55.4 3.9 50.6 4.4 C45.8 4.9 41.0 4.0 36.2 4.5 C32.0 4.9 28.0 3.9 25.3 3.6 Z"/>

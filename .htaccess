@@ -1,0 +1,35 @@
+RewriteEngine On
+ErrorDocument 404 /theosk/404.html
+
+RewriteRule ^$ /theosk/ [R=302,L]
+
+RewriteRule ^theosk/(?:catalog/(?:[^/]+/)?)?(styles|scripts|Assets|DesignEkran)/(.*)$ $1/$2 [L]
+RewriteRule ^theosk/(?:catalog/(?:[^/]+/)?)?api/(.*)$ api/$1 [L]
+
+RewriteRule ^theosk/(catalog|favorites|cart|product|special-order|about)$ /theosk/$1/ [R=302,L]
+RewriteRule ^theosk/catalog/([^/]+)$ /theosk/catalog/$1/ [R=302,L]
+
+RewriteCond %{THE_REQUEST} \s/+[^\s]*/pages/catalog\.html[?\s]
+RewriteRule ^pages/catalog\.html$ /theosk/catalog/ [R=302,L,QSA]
+RewriteCond %{THE_REQUEST} \s/+[^\s]*/pages/favorites\.html[?\s]
+RewriteRule ^pages/favorites\.html$ /theosk/favorites/ [R=302,L,QSA]
+RewriteCond %{THE_REQUEST} \s/+[^\s]*/pages/cart\.html[?\s]
+RewriteRule ^pages/cart\.html$ /theosk/cart/ [R=302,L,QSA]
+RewriteCond %{THE_REQUEST} \s/+[^\s]*/pages/product\.html[?\s]
+RewriteRule ^pages/product\.html$ /theosk/product/ [R=302,L,QSA]
+RewriteCond %{THE_REQUEST} \s/+[^\s]*/pages/specialOrder\.html[?\s]
+RewriteRule ^pages/specialOrder\.html$ /theosk/special-order/ [R=302,L,QSA]
+RewriteCond %{THE_REQUEST} \s/+[^\s]*/pages/about\.html[?\s]
+RewriteRule ^pages/about\.html$ /theosk/about/ [R=302,L,QSA]
+
+RewriteRule ^(catalog|favorites|cart|product|special-order|about)/?$ /theosk/$1/ [R=302,L,QSA]
+
+RewriteRule ^theosk/$ index.html [QSA,L]
+RewriteRule ^theosk/404\.html$ 404.html [QSA,L]
+RewriteRule ^theosk/catalog/$ pages/catalog.html [QSA,L]
+RewriteRule ^theosk/catalog/([^/]+)/$ pages/product.html?slug=$1 [QSA,L]
+RewriteRule ^theosk/favorites/$ pages/favorites.html [QSA,L]
+RewriteRule ^theosk/cart/$ pages/cart.html [QSA,L]
+RewriteRule ^theosk/product/$ pages/product.html [QSA,L]
+RewriteRule ^theosk/special-order/$ pages/specialOrder.html [QSA,L]
+RewriteRule ^theosk/about/$ pages/about.html [QSA,L]

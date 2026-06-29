@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iPhone Air | THEOSK STORE</title>
+    <title>Товар | THEOSK STORE</title>
     <link rel="stylesheet" href="../styles/base.css" />
     <script src="../scripts/home.js" defer></script>
   </head>
@@ -26,18 +26,18 @@
             </ul>
           </nav>
 
-          <a href="../index.html">THEOSK STORE</a>
+          <a href="/theosk/">THEOSK <span>STORE</span></a>
 
           <nav aria-label="Избранное и корзина">
             <ul>
               <li>
-                <a href="favorites.html">
+                <a href="/theosk/favorites/">
                   <img src="../DesignEkran/svg/Heart.svg" alt="Перейти в избранное" width="28" height="28" />
                   <img src="../DesignEkran/svg/HeartHover.svg" alt="" width="28" height="28" aria-hidden="true" />
                 </a>
               </li>
               <li>
-                <a href="cart.html">
+                <a href="/theosk/cart/">
                   <img src="../DesignEkran/svg/Korzina.svg" alt="Перейти в корзину" width="28" height="28" />
                   <img src="../DesignEkran/svg/KorzinaHover.svg" alt="" width="28" height="28" aria-hidden="true" />
                 </a>
@@ -63,10 +63,12 @@
 
         <nav class="menu-overlay__nav" aria-label="Меню сайта">
           <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="specialOrder.html">Спецзаказ</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="about.html">О нас</a></li>
+            <li><a href="/theosk/">Главная</a></li>
+            <li><a href="/theosk/special-order/">Спецзаказ</a></li>
+            <li><a href="/theosk/catalog/">Каталог</a></li>
+            <li class="menu-overlay__mobile-item"><a href="/theosk/cart/">Корзина</a></li>
+            <li class="menu-overlay__mobile-item"><a href="/theosk/favorites/">Избранное</a></li>
+            <li><a href="/theosk/about/">О нас</a></li>
           </ul>
         </nav>
       </aside>
@@ -74,106 +76,40 @@
       <main>
         <div class="container">
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <a href="../index.html">
+            <a href="/theosk/">
               <img src="../DesignEkran/svg/Bread_House.svg" alt="" width="32" height="32" />
               <img src="../DesignEkran/svg/Bread_House_Hover.svg" alt="" width="32" height="32" aria-hidden="true" />
               <span class="visually-hidden">Главная</span>
             </a>
             <span aria-hidden="true">/</span>
-            <a href="catalog.html?category=iphone">Каталог</a>
+            <a href="/theosk/catalog/?category=iphone">Каталог</a>
           </nav>
 
           <article class="product">
-            <figure>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="
-                    ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.webp 1x,
-                    ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@2x.webp 2x,
-                    ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@3x.webp 3x
-                  "
-                />
-                <img
-                  src="../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.png"
-                  srcset="
-                    ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue.png 1x,
-                    ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@2x.png 2x,
-                    ../Assets/desktop/photo/iphone17/iPhone_17_Blue/iphone-17-mist-blue@3x.png 3x
-                  "
-                  alt="iPhone Air в голубом цвете"
-                  width="520"
-                  height="610"
-                />
-              </picture>
-            </figure>
+            <figure></figure>
 
             <section aria-labelledby="product-title">
               <header>
-                <h1 id="product-title">iPhone Air</h1>
-                <button type="button" aria-label="Добавить iPhone Air в избранное" aria-pressed="false" data-favorite>
+                <h1 id="product-title"></h1>
+                <button type="button" aria-label="Добавить товар в избранное" aria-pressed="false" data-favorite>
                   <svg viewBox="0 0 35 32" aria-hidden="true">
                     <path d="M14.4 7.6 C15.2 8.3 16.1 9.6 16.9 11.2 C17.2 11.8 17.4 12.5 17.6 13.2 C17.9 12.1 18.3 10.9 18.8 9.7 C19.4 8.2 20.2 6.8 21 6 C22 5 23.2 4.5 24.5 4.6 C29 4.8 31 8 30.1 12.7 C29 18 24 21 20.8 25.4 C19.5 26.5 18.1 27.4 16.7 28.1 C11 25 7 21 5.1 14.3 C3.8 9 5.5 6 8.3 5.5 C10.5 4.6 12.8 6 14.4 7.6Z" />
                   </svg>
                 </button>
               </header>
 
-              <p>Новое, запакованное устройство с гарантией</p>
-              <p>В наличии</p>
-              <p>65 000 ₽</p>
+              <p></p>
+              <p></p>
+              <p></p>
 
-              <form>
-                <div class="product-option" data-custom-select>
-                  <label for="product-color">Цвет</label>
-                  <select class="visually-hidden" id="product-color" name="color" tabindex="-1">
-                    <option value="blue">Blue</option>
-                    <option value="black">Black</option>
-                    <option value="white">White</option>
-                    <option value="lavender">Lavender</option>
-                  </select>
-                  <button type="button" aria-haspopup="listbox" aria-expanded="false" data-select-button>
-                    <span>Blue</span>
-                  </button>
-                  <ul role="listbox" aria-label="Цвет" hidden>
-                    <li><button type="button" role="option" aria-selected="true" data-value="blue">Blue</button></li>
-                    <li><button type="button" role="option" aria-selected="false" data-value="black">Black</button></li>
-                    <li><button type="button" role="option" aria-selected="false" data-value="white">White</button></li>
-                    <li><button type="button" role="option" aria-selected="false" data-value="lavender">Lavender</button></li>
-                  </ul>
-                </div>
-
-                <div class="product-option" data-custom-select>
-                  <label for="product-memory">Память</label>
-                  <select class="visually-hidden" id="product-memory" name="memory" tabindex="-1">
-                    <option value="256">256GB</option>
-                    <option value="512">512GB</option>
-                    <option value="1024">1TB</option>
-                  </select>
-                  <button type="button" aria-haspopup="listbox" aria-expanded="false" data-select-button>
-                    <span>256GB</span>
-                  </button>
-                  <ul role="listbox" aria-label="Память" hidden>
-                    <li><button type="button" role="option" aria-selected="true" data-value="256">256GB</button></li>
-                    <li><button type="button" role="option" aria-selected="false" data-value="512">512GB</button></li>
-                    <li><button type="button" role="option" aria-selected="false" data-value="1024">1TB</button></li>
-                  </ul>
-                </div>
-
-                <button type="button" data-cart>
-                  <span>Добавить в корзину</span>
-                </button>
-              </form>
+              <form></form>
             </section>
           </article>
 
           <section class="product-description" aria-labelledby="advantages-title">
-            <h2 id="advantages-title">Преимущества устройства</h2>
-            <p>Новые ощущения · Парадокс в ваших руках</p>
-            <ul>
-              <li>iPhone Air — прорывной и неформатный смартфон, который подойдет далеко не всем.</li>
-              <li>Apple экспериментирует с дизайном и материалами. И, возможно, готовится применять «тонкие технологии» через год-два, когда выйдет складной iPhone Fold или Flip — как пойдет.</li>
-              <li>Мы получили интересный и необычный айфон. Мы просили чего-нибудь новенького, мы получили. На деле, правда, это новенькое — достаточно спорное.</li>
-            </ul>
+            <h2 id="advantages-title"></h2>
+            <p></p>
+            <ul></ul>
           </section>
         </div>
       </main>

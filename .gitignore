@@ -8,3 +8,4 @@ vendor/
 .env
 .env.*
 !.env.example
+api/config.local.php

@@ -1,0 +1,37 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      PGHOST: db
+      PGPORT: 5432
+      PGDATABASE: theosk_store
+      PGUSER: theosk
+      PGPASSWORD: theosk_password
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: theosk_store
+      POSTGRES_USER: theosk
+      POSTGRES_PASSWORD: theosk_password
+    ports:
+      - "55433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+      - ./sql/seed.sql:/docker-entrypoint-initdb.d/002-seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U theosk -d theosk_store"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres-data:

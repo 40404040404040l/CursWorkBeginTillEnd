@@ -1,0 +1,20 @@
+RewriteEngine On
+
+<FilesMatch "^config(\.example|\.local)?\.php$">
+    Require all denied
+</FilesMatch>
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [END]
+
+RewriteRule ^health/?$ health.php [QSA,END]
+RewriteRule ^categories/?$ categories.php [QSA,END]
+RewriteRule ^products/?$ products.php [QSA,END]
+RewriteRule ^products/popular/?$ products/popular.php [QSA,END]
+RewriteRule ^products/([^/]+)/variants/?$ variants.php?slug=$1 [QSA,END]
+RewriteRule ^products/([^/]+)/?$ product.php?slug=$1 [QSA,END]
+RewriteRule ^cart/?$ cart.php [QSA,END]
+RewriteRule ^favorites/?$ favorites.php [QSA,END]
+RewriteRule ^orders/?$ orders.php [QSA,END]
+RewriteRule ^special-orders/?$ special-orders.php [QSA,END]
