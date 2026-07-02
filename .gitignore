@@ -1,11 +1,19 @@
 .DS_Store
+._*
 Thumbs.db
 *.log
+*.tar.gz
+*.zip
+__MACOSX/
+.idea/
+.vscode/
 
 node_modules/
 vendor/
+postgres-data/
 
 .env
 .env.*
 !.env.example
 api/config.local.php
+docs/defense/

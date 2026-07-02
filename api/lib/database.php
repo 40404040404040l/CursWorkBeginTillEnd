@@ -40,9 +40,21 @@ final class Database
 
     private static function config(): array
     {
-        $privateConfigPath = dirname(__DIR__, 3) . '/theosk_private/config.local.php';
         $localConfigPath = dirname(__DIR__) . '/config.local.php';
-        $configPath = is_file($privateConfigPath) ? $privateConfigPath : $localConfigPath;
+        $configCandidates = [
+            dirname(__DIR__, 4) . '/theosk_private/config.local.php',
+            dirname(__DIR__, 3) . '/theosk_private/config.local.php',
+            $localConfigPath,
+        ];
+        $configPath = $localConfigPath;
+
+        foreach ($configCandidates as $candidate) {
+            if (is_file($candidate)) {
+                $configPath = $candidate;
+                break;
+            }
+        }
+
         $localConfig = is_file($configPath) ? require $configPath : [];
         $dbConfig = $localConfig['db'] ?? [];
 
